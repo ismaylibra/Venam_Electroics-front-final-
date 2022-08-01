@@ -1,0 +1,99 @@
+@media (max-width:576px){
+    body{
+        overflow-x: hidden !important;
+    }
+   #desktop{
+    .header-middle{
+        display: none;
+    }
+    .header-bottom{
+        display: none;
+    }
+   }
+   #phone{
+    display: block;
+    background-color: #0465D2;
+    padding: 25px 0;
+    .phone-hd-left{
+        margin-left: 20px;
+        img{
+            width: 100%;
+        }
+    }
+    .phone-hd-right{
+        button{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            i{
+                color: #fff;
+                font-size: 30px;
+                margin-right: 35px;
+            }
+        }
+    }
+}
+#phone-nav{
+    display: block !important;
+    background-color: #202020;
+    .pn-top{
+        padding: 25px 0;
+        .pn-top-right{
+            button{
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                font-weight: bolder;
+            }
+        }
+    }
+    .pn-middle-btn{
+        background-color: #4d4d4d;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+}
+#Slider{
+    a{
+        padding: 8px 58px !important;
+    }
+    .slick-arrow{
+        bottom:0 !important ;
+    }
+}
+#Super-deals{
+    .view-more{
+        display: none;
+    }
+}
+#Deals-Day, #Popular-viewed{
+    .slick-arrow{
+        display: none !important; 
+    }
+}
+.footer-subscribe{
+    .subscribe-right{
+        input{
+            padding: 17px 195px 17px 30px !important; 
+         
+        }
+    }
+}
+    .footer-menu{
+        .flexmenu{
+          flex-direction: column !important;
+        }
+    //  .subscribe-left{
+    //     flex-direction: column;
+    //  }
+    
+}
+.offer-btn{
+    padding: 11px 21px;
+}
+}

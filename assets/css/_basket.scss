@@ -1,0 +1,59 @@
+#Top-Pics{
+    .modern-technology, .modern-technology-bottom {
+        background-image: url('/assets/photos/banner-1.jpg');
+        background-position: center;
+        background-size: cover;
+        padding: 2rem;
+
+        .modern-top {
+            font-size: 15px;
+
+            span {
+                color: #7d7d7d;
+                font-size: 12px;
+                font-weight: bolder;
+                letter-spacing: 1px;
+
+            }
+        }
+
+        .modern-header {
+            margin-top: 10px;
+
+            h3 {
+                font-size: 35px;
+                color: #252525;
+                font-weight: bolder;
+                line-height: 1.6;
+            }
+        }
+
+        .modern-description {
+            p {
+                font-size: 15px;
+                color: #7d7d7d;
+                line-height: 1.8;
+                padding-right: 25.25rem;
+            }
+        }
+
+        .modern-button {
+            margin-top: 40px;
+
+            a {
+                padding: 17px 35px;
+                color: #fff;
+                background-color: #0465d2;
+                font-size: 14px;
+                border-radius: 4px;
+                font-weight: bold;
+                text-align: center;
+                transition: .4s;
+
+                &:hover {
+                    background-color: #252525;
+                }
+            }
+        }
+    }
+}

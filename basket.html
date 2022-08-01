@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="assets/photos/venam-tab-icon.png">
+    <link rel="stylesheet" href="assets/css/style.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/_responsive.scss">
+    <link rel="stylesheet" href="assets/css/_details.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cart - Venam</title>
+</head>
+
+<body>
+    <header id="desktop">
+        <div class="header-top">
+            <div class="container  ">
+                <div class="d-flex justify-content-between flex-wrap align-items-center ">
+                    <div class="all-top-btns ">
+                        <div class="dropdown">
+                            <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>US/USD</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">AUS/USD</a></li>
+                                <li><a class="dropdown-item" href="#">BNG/TK</a></li>
+                                <li><a class="dropdown-item" href="#">IN/RP</a></li>
+                            </ul>
+                        </div> <span style="color: #c1c1c1;">|</span>
+                        <div class="dropdown">
+                            <a class="btn btn-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <span>Sell With Us</span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Returns</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy</a></li>
+                                <li><a class="dropdown-item" href="#">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-social">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.viber.com/en/" target="_blank">
+                            <i class="fa-brands fa-viber"></i>
+                        </a>
+                        <a href="https://www.whatsapp.com/" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="header-middle mt-4.">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                    <div class="hd-middle-left">
+                        <a href="index.html">
+                            <img src="assets/photos/venam-nav-logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="hd-middle-center">
+                        <div class="md-center-all d-inline-block">
+                            <input type="text" placeholder="Search for your item's type...">
+                            <span style="color: #c1c1c1;">|</span>
+                            <span class="all-category">All Category </span>
+                            <span class="category-arrow">
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="hd-middle-right">
+                        <a href="account.html" class="rounded-circle user-btn">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="" class="rounded-circle user-btn">
+                            <i class="fa-solid fa-arrows-rotate"></i><span>0</span>
+                        </a>
+                        <a href="" class="rounded-circle user-btn">
+                            <i class="fa-solid fa-heart"></i><span>0</span>
+                        </a>
+                        <a href="" class="rounded-circle user-btn">
+                            <i class="fa-solid fa-basket-shopping"></i><span id="basketCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom mt-4">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div class="hd-btm-left">
+                        <div class="all-category" id="allCate">
+                            <div class="container">
+                                <i class="fa-solid fa-bars"></i> <span>All Categories</span><i
+                                    class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hd-btm-right">
+                        <ul class="d-flex justify-content-between " style="list-style:none ;">
+                            <li><a   href="index.html">HOME <i class="fa-solid fa-angle-down"></i></a>
+                            </li>
+                            <li><a  href="">CATEGORIES <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a  href="shop.html">SHOP <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li> <a  href="index.html">PAGES <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a  href="">SPECIAL <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a  href="">STORE LIST <i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a  href="contact.html">CONTACT</a></li>
+                        </ul>
+                        
+                        
+                        
+                       
+                        
+                        
+                        
+                    </div>
+                    <div class="all-category-menu activeCatMenu  ">
+                        <ul>
+                            <li>Accessories & Parts<i class="fa-solid fa-angle-right" style="margin-left: 30px ;"></i>
+                            </li>
+                            <li>Cables & Adapters<i class="fa-solid fa-angle-right" style="margin-left: 35px ;"></i>
+                            </li>
+                            <li>Batteries<i class="fa-solid fa-angle-right" style="margin-left: 6.5rem ;"></i></li>
+                            <li>Bags & Cases</li>
+                            <li>Electronic & Cigarettes</li>
+                            <li>Audio & Video</li>
+                            <li>Televisions</li>
+                            <li>TV Receivers</li>
+                            <li>Projectors<i class="fa-solid fa-angle-right" style="margin-left: 6rem ;"></i></li>
+                            <li>Audio Ampflifier Boards</li>
+                            <li>TV Sticks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+    </header>
+    <header id="phone">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-wrap align-items-center">
+                <div class="phone-hd-left">
+                    <a href="">
+                        <img src="assets/photos/white_logo-for-phone.png" alt="">
+                    </a>
+                </div>
+                <div class="phone-hd-right">
+                    <button><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="phone-nav" class="d-none">
+
+        <div class="pn-top">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-wrap align-items-center">
+                    <div class="pn-top-left">
+                        <a href="">
+                            <img src="assets/photos/white_logo-for-phone.png" alt="">
+                        </a>
+                    </div>
+                    <div class="pn-top-right">
+                        <button>X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pn-middle">
+            <div class="btn-group" role="group" aria-label="Default button group">
+                <button type="button" class="pn-middle-btn">Menu</button>
+                <button type="button" class="pn-middle-btn">Categories</button>
+                <button type="button" class="pn-middle-btn"><i class="fa-solid fa-user"></i></button>
+            </div>
+        </div>
+        <div class="pn-accordion"></div>
+        <div class="pn-footer"></div>
+
+    </section>
+    <section id="Top-Pics">
+       <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="modern-technology">
+                    <div class="modern-top">
+                        <span>BUILD WITH ELEMENTOR</span>
+                    </div>
+                    <div class="modern-header">
+                        <h3>Modern Technology Products</h3>
+                    </div>
+                    <div class="modern-description">
+                        <p>We’ve gathered all of the features that you might need in order to make your store online in this theme.</p>
+                    </div>
+                    <div class="modern-button">
+                        <a href="">SHOP NOW <i class="fa-solid fa-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="modern-technology-bottom" style="background-image:url(assets/photos/banner-2.jpg) ;">
+                    <div class="modern-top">
+                        <span>BUILD WITH ELEMENTOR</span>
+                    </div>
+                    <div class="modern-header">
+                        <h3>Modern Technology Products</h3>
+                    </div>
+                    <div class="modern-description">
+                        <p>We’ve gathered all of the features that you might need in order to make your store online in this theme.</p>
+                    </div>
+                    <div class="modern-button">
+                        <a href="https://www.youtube.com/watch?v=AeeE6PyU-dQ">VIDEO POPUP <i class="fa-solid fa-right-long"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+    <section id="AlertMessage" class="mt-5 d-none">
+        <div class="container">
+            <div class="alert alert-secondary" role="alert">
+                Your cart is currently empty.
+              </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="Product-table" class="d-none">
+        <div class="container">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+    
+            </table>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="exclusive-offer py-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <div class="offer-text">
+                        <div class="container">
+                            <div class="d-flex justify-content-between">
+                                <div class="offer-text-left text-white">
+                                    <div class="container">
+                                        <span>Exclusive Offer</span>
+                                        <h2>Smart Watch </h2>
+                                        <h2 class="bracelet">Bracelet</h2>
+                                    </div>
+                                </div>
+                                <div class="offer-text-right">
+                                    <img src="assets/photos/limited_offer_discount.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-btns">
+                        <div class="container">
+                            <div class="offer-btn mb-3 ">
+                                <a>LIMITED TIME OFFER</a>
+                            </div>
+                            <div class="offer-info text-white">
+                                <div class="d-flex align-items-center">
+                                    <span class="upto">UPTO</span>
+                                    <span class="dollarPrice">$50.00</span>
+                                    <span class="off ">OFF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-subscribe">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="subscribe-left">
+                            <h4>Subscribe Now !</h4>
+                            <span>Venam By Signing Up To Our Newsletter.</span>
+                        </div>
+                        <div class="subscribe-right">
+                            <input type="email" placeholder="Enter Your Email...">
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-find">
+                <div class="container">
+                    <div class="find-top">
+                        <div class="container">
+                            <h4>Find Out More</h4>
+                        </div>
+                    </div>
+                    <div class="find-bottom">
+                        <div class="container">
+                            <span>Main Categories : </span><span class="categoryLinks"> <a href="">Accessories</a> <a
+                                    href="">Adapters</a> <a href="">Batteries</a> <a href="">Webcams</a><a
+                                    href="">Televisions</a><a href="">Projectors</a> <a href="">Bags & Cases</a><a
+                                    href="">Receivers</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-menu">
+
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="menu-description mt-4">
+                            <div class="container">
+                                <div class="menu-description-image">
+                                    <div class="container">
+                                        <img src="assets/photos/menu-description-image.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="menu-description-content mt-4">
+                                    <div class="container">
+                                        <p>Namkand sodales vel online best prices Amazon <br> Check out ethnic wear,
+                                            formal wear western wear <br> Blood Pressure Rate Monito lorem ipsum dolor
+                                            sit <br> amet lorem ipsum sonda mony daml...</p>
+                                    </div>
+                                </div>
+                                <div class="menu-description-social">
+                                    <div class="container">
+                                        <a href="">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa-brands fa-pinterest"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer-service">
+                            <div class="customer-service-top">
+                                <h5>Customer Service</h5>
+                            </div>
+                            <div class="customer-service-links">
+                                <ul>
+                                    <li><a href="">Help Center</a></li>
+                                    <li><a href="">Returns</a></li>
+                                    <li><a href="">Product Recalls</a></li>
+                                    <li><a href="">Accessiblity</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="quick-links">
+                            <div class="quick-links-top">
+                                <h5>Quick Links</h5>
+                            </div>
+                            <div class="quick-links-link">
+                                <ul>
+                                    <li><a href="">Return Policy</a></li>
+                                    <li><a href="">Term Of Use</a></li>
+                                    <li><a href="">Security</a></li>
+                                    <li><a href="">About us</a></li>
+                                    <li><a href="">Store Pickup</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact-us">
+                            <div class="contact-us-top">
+                                <h5>Contact Us</h5>
+                            </div>
+                            <div class="contact-us-content">
+                                <ul>
+                                    <li><i class="fa-solid fa-location-dot"></i> W898 RTower Stat, Suite 56</li>
+                                    <li><i class="fa-solid fa-headphones-simple"></i> 458-965-3224</li>
+                                    <li><i class="fa-solid fa-envelope-open"></i> Support@info.Com</li>
+                                    <li><i class="fa-solid fa-blender-phone"></i> 458-965-3224</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="footer-bottom-left">
+                        <div class="container">
+                            <p>Copyright © 2022 - Ismayil Ibra.</p>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <div class="container">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <img src="assets/photos/card-logos.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/basket.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
